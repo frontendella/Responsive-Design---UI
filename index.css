@@ -114,6 +114,28 @@ ul {
      }
  }
  
+@media (min-width: 600px) {
+     
+     ul.testimonials {
+         display: grid;
+         grid-template-columns: repeat(2,auto);
+         grid-template-rows: repeat(2,auto);
+         grid-gap: 1em;
+     }
+     ul.testimonials li {
+         margin: 0;
+     }
+     
+     ul.testimonials li:nth-of-type(3) {
+         grid-area: 2 / 1 / 2 / 3;
+     }
+     
+     img {
+         clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+     }
+     
+ }
+ 
  /*
 
 - White Space
